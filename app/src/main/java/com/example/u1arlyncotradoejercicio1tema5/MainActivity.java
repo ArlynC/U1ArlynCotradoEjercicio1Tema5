@@ -50,7 +50,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         mapa = googleMap;
         mapa.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(-18.007633, -70.239271), 14));
 
-        mapa.addMarker(new MarkerOptions().position(new LatLng(-18.004905, -70.235160)).title("Postgrado UPT"));
+        mapa.addMarker(new MarkerOptions().position(new LatLng(-18.004905, -70.235160)).title("Postgrado UPT").icon(BitmapDescriptorFactory.fromResource(R.mipmap.marker_20)));
             PolygonOptions polygonOptions = new PolygonOptions()
                     .add(new LatLng(-18.004806, -70.235560),
                             new LatLng(-18.005302, -70.235287),
@@ -60,7 +60,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
             polygon = mapa.addPolygon(polygonOptions); //se añade al mapa
             polygon.setFillColor(Color.MAGENTA);
 
-        mapa.addMarker(new MarkerOptions().position(new LatLng(-18.005705, -70.225211)).title("Campus"));
+        mapa.addMarker(new MarkerOptions().position(new LatLng(-18.005705, -70.225211)).title("Campus").icon(BitmapDescriptorFactory.fromResource(R.mipmap.marker_20)));
         PolygonOptions Campus = new PolygonOptions()
                 .add(new LatLng(-18.003327, -70.224879),
                         new LatLng(-18.004332, -70.224278),
@@ -77,7 +77,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         polygon = mapa.addPolygon(Campus); //se añade al mapa
         polygon.setFillColor(Color.CYAN);
 
-        mapa.addMarker(new MarkerOptions().position(new LatLng(-18.013421, -70.250047)).title("Admisión"));
+        mapa.addMarker(new MarkerOptions().position(new LatLng(-18.013421, -70.250047)).title("Admisión").icon(BitmapDescriptorFactory.fromResource(R.mipmap.marker_20)));
         PolygonOptions Admision = new PolygonOptions()
                 .add(new LatLng(-18.013372, -70.250048),
                         new LatLng(-18.013429, -70.249986),
@@ -88,7 +88,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         polygon = mapa.addPolygon(Admision); //se añade al mapa
         polygon.setFillColor(Color.GREEN);
 
-        mapa.addMarker(new MarkerOptions().position(new LatLng(-18.009603, -70.242777)).title("Rectorado"));
+        mapa.addMarker(new MarkerOptions().position(new LatLng(-18.009603, -70.242777)).title("Rectorado").icon(BitmapDescriptorFactory.fromResource(R.mipmap.marker_20)));
         PolygonOptions Rectorado = new PolygonOptions()
                 .add(new LatLng(-18.009175, -70.242766),
                         new LatLng(-18.009501, -70.243147),
@@ -99,7 +99,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         polygon = mapa.addPolygon(Rectorado); //se añade al mapa
         polygon.setFillColor(Color.YELLOW);
 
-        mapa.addMarker(new MarkerOptions().position(new LatLng(-18.004591, -70.234473)).title("Clinica Odontologica UPT"));
+        mapa.addMarker(new MarkerOptions().position(new LatLng(-18.004591, -70.234473)).title("Clinica Odontologica UPT").icon(BitmapDescriptorFactory.fromResource(R.mipmap.marker_20)));
         PolygonOptions Clinica = new PolygonOptions()
                 .add(new LatLng(-18.004637, -70.234318),
                         new LatLng(-18.004795, -70.234522),
